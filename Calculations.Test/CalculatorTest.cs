@@ -1,6 +1,6 @@
 namespace Calculations.Test
 {
-    public class CalculatrTest
+    public class CalculatorTest
     {
         [Fact]
         public void Add_GivenTwoIntValues_ReturnsInt()

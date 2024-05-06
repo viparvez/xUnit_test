@@ -1,7 +1,7 @@
 ﻿namespace Calculations.Test
 {
     [CollectionDefinition("Customer")]
-    public class CustomerrFixtureCollection : ICollectionFixture<CustomerFixture>
+    public class CustomerFixtureCollection : ICollectionFixture<CustomerFixture>
     {
 
     }

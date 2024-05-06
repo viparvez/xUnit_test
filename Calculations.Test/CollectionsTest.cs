@@ -62,6 +62,15 @@ namespace Calculations.Test
             Assert.Equal(expectedCollection, collections.FiboNumbers);
         }
 
+        [Theory]
+        [MemberData(nameof(ShareDataTest.TestData), MemberType = typeof(ShareDataTest))]
+        public void IsOdd_Test(int value, bool expected)
+        {
+            var collections = _collectionsFixture.collections;
+            var result = collections.IsOdd(value);
+            Assert.Equal(expected,result);
+        }
+
         public void Dispose()
         {
             memoryStream.Dispose();
